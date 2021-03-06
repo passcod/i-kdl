@@ -1,0 +1,15 @@
+[package]
+name = "i-kdl"
+version = "1.0.0"
+description = "Inline-KDL Embedded Document Language"
+authors = ["Félix Saparelli <felix@passcod.name>"]
+license-file = "LICENSE.md"
+readme = "README.md"
+homepage = "https://github.com/passcod/i-kdl"
+repository = "https://github.com/passcod/i-kdl"
+keywords = ["kdl", "document", "i-kdl"]
+edition = "2018"
+
+[dependencies]
+kdl = "1.0.0"
+thiserror = "1.0.22"
