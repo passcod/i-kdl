@@ -29,23 +29,35 @@ Simple:
 
 ```ikdl
 Hic voluptatem eum et repudiandae nisi cum qui sed. Voluptatum molestiae recusa
-quod<note latin { quī case=nominative gender=neuter number=singular }> quas
+quod<note latin="quī" case="nominative" gender="neuter" number="singular"> quas
 suscipit reprehenderit eos commodi. Dolores earum iste tempore culpa ut nostrum.
 ```
 
-Can span multiple lines:
+Can span multiple lines (remembering to use KDL line continuations where appropriate):
 
 ```ikdl
-Inflection of quī (“who, which”), Proto-Indo-European *kʷod, whence also <word hwæt
-lang="Old English" {
-  translation lang=English what
-}>.
+Inflection of quī (“who, which”), Proto-Indo-European *kʷod, whence also <etymology \
+	word="hwæt" \
+	lang="Old English" \
+	{
+		translation {
+			text "what"
+			lang "English"
+		}
+	}
+>.
 ```
 
 KDL fragment can contain `<>` in strings etc.
 
 ```ikdl
 i-kdl uses <code "<"> and <code ">"> to indicate a KDL fragment.
+```
+
+You can escape a `<` in text with `\\`:
+
+```ikdl
+Escaping \< is possible: <true>.
 ```
 
 ## License
